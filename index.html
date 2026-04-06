@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🤖 Browser Coding AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🤖 Browser Coding AI</h1>
+            <p>AI-powered coding assistant that runs entirely in your browser</p>
+        </div>
+
+        <div class="control-panel">
+            <button id="loadBtn" class="btn btn-load">⚡ Load AI Models</button>
+            <span id="status" class="status">Status: Ready</span>
+        </div>
+
+        <div class="main-content">
+            <div class="editor-section">
+                <h2>📝 Code Editor</h2>
+                <textarea id="codeInput" placeholder="Paste your code here or describe what you want to generate..."></textarea>
+            </div>
+
+            <div class="features">
+                <button id="autocompleteBtn" class="btn btn-feature">✨ Get Suggestions</button>
+                <button id="bugDetectBtn" class="btn btn-feature">🐛 Analyze for Bugs</button>
+                <button id="explainBtn" class="btn btn-feature">📖 Explain Code</button>
+                <button id="generateBtn" class="btn btn-feature">🎨 Generate Code</button>
+            </div>
+
+            <div class="output-section">
+                <h2>📊 Results</h2>
+                <div id="output" class="output-box">
+                    <p class="placeholder">Results will appear here...</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-box">
+            <h3>💡 How to Use:</h3>
+            <ul>
+                <li><strong>Load Models:</strong> Click the load button first</li>
+                <li><strong>Get Suggestions:</strong> Paste code → Get autocomplete ideas</li>
+                <li><strong>Find Bugs:</strong> Paste code → Analyze for issues</li>
+                <li><strong>Understand Code:</strong> Paste code → Get explanation</li>
+                <li><strong>Generate Code:</strong> Describe what you want → Get code</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.11.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@xenova/transformers@2.6.0"></script>
+    <script src="app.js"></script>
+</body>
+</html>
